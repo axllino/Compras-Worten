@@ -19,7 +19,7 @@ def iniciar_driver():
         chrome_options.add_argument(argument)
     chrome_options.add_experimental_option('prefs', {
         # Auterar o local padrão do download de arquivos
-        'download.default_directory': 'C:\\Users\\lino\Desktop\\Compras Worten\\download',
+        'download.default_directory': 'C:\\Users\\lino\\Desktop\\Compras Worten\\Compras-Worten\\download',
         # Notificar o google chrome sobre essa auteração
         'download.directory_upgrade': True,
         # Desabilitar a confirmação de download
@@ -86,7 +86,8 @@ texto01 = 'axlmotivacao@gmail.com'
 digitar_naturalmente(texto01, campo_username)
 sleep(3)
 
-campo_senha_usuario = driver.find_element(By.XPATH, '//input[@type="password"]')
+campo_senha_usuario = driver.find_element(
+    By.XPATH, '//input[@type="password"]')
 texto02 = 'EZ3nURgEC5'
 digitar_naturalmente(texto02, campo_senha_usuario)
 
